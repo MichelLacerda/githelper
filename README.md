@@ -17,7 +17,9 @@ $ git lg
 $ git lg1
 ```
 
+or
+
 ```sh
-git log --graph --abbrev-commit --decorate --date=relative --all
-git log --graph --oneline --decorate --date=relative --all
+$ git log --graph --abbrev-commit --decorate --date=relative --all
+$ git log --graph --oneline --decorate --date=relative --all
 ```
