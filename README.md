@@ -1,0 +1,2 @@
+# githelper
+Arquivos para auxiliar 
