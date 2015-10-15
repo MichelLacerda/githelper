@@ -23,3 +23,13 @@ or
 $ git log --graph --abbrev-commit --decorate --date=relative --all
 $ git log --graph --oneline --decorate --date=relative --all
 ```
+
+#### Remove remote Branch 
+
+```sh
+$ git push origin --delete <branchName>
+
+or
+
+$git push origin :<branchName>
+```
