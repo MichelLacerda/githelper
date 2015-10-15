@@ -27,9 +27,14 @@ $ git log --graph --oneline --decorate --date=relative --all
 #### Remove remote Branch 
 
 ```sh
-$ git push origin --delete <branchName>
+git 1.7+ $ git push origin --delete <branchName>
+git 1.7- $git push origin :<branchName>
+```
 
-or
+#### Remove local branch
+```sh
+[Full]  $ git branch --delete <branch>
+[Short] $ git branch -d <branch>
+[Force  $ git branch -D <branch>
 
-$git push origin :<branchName>
 ```
