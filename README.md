@@ -38,3 +38,14 @@ git 1.7- $git push origin :<branchName>
 [Force  $ git branch -D <branch>
 
 ```
+
+
+####  Revert commit
+```sh
+$ git reset --hard HEAD
+
+or
+
+$ git reset --hard <HASH: e3a3df4>
+------> git reset --hard e3a3df4
+```
