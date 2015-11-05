@@ -49,3 +49,9 @@ or
 $ git reset --hard <HASH: e3a3df4>
 ------> git reset --hard e3a3df4
 ```
+
+
+#### Git status date
+```sh
+$ git status -s | while read mode file; do echo $mode $(date --reference=$file +"%Y-%m-%d %H:%M:%S") $file; done
+```
