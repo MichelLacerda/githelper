@@ -55,3 +55,11 @@ $ git reset --hard <HASH: e3a3df4>
 ```sh
 $ git status -s | while read mode file; do echo $mode $(date --reference=$file +"%Y-%m-%d %H:%M:%S") $file; done
 ```
+
+#### Rename branch local/remote
+```sh
+$ git branch -m old_branch new_branch         # Rename branch locally    
+$ git push origin :old_branch                 # Delete the old branch    
+$ git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote
+
+```
