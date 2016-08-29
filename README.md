@@ -63,3 +63,15 @@ $ git push origin :old_branch                 # Delete the old branch
 $ git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote
 
 ```
+
+```sh
+
+teste = git diff --name-only {src} {comp} HEAD
+git archive --format=tar.gz -o {nameoutput}.tar.gz HEAD $teste
+
+
+git diff --name-only -z --diff-filter=ACMRT master..HEAD | xargs -0 git archive -o diff_archive.zip HEAD --
+
+files=$(git diff --name-only master..HEAD)
+git archive --format=zip -o diff_archive.zip HEAD ${files:-NO_SUCH_FILE}
+```
